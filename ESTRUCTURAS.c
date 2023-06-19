@@ -3,6 +3,8 @@
 
 int main()
 {
+
+    //Creacion de la estructura con nombre alumno con arreglo de 6
     struct Alumno
     {
         char nombre[100];
@@ -11,6 +13,8 @@ int main()
         int edad;
         float promedio;
     } alumno[6];
+
+    //For para repetir las veces del arreglo deltro de la estructura
 
     for (int i = 1; i < 6; i++)
     {
@@ -33,8 +37,14 @@ int main()
         scanf("%f", &alumno[i].promedio);
 
         fflush(stdin);
+
+        //Se coloca printf para imprimir el texto deseado a cada dato
+        //Se coloca fflush para
+        //Se coloca fgets para obtener los datos de caracter del alumno como nombre dereccion y carrera
+        //Se coloca scanf para los numeros enteros y flotantes
     }
 
+    //Se crea otro for para imprimir los resultados de cada alumno
     for (int i = 1; i < 6; i++)
     {
         printf("\nDatos del alumno %d:\n", i);
