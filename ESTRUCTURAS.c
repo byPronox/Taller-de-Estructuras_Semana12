@@ -2,32 +2,59 @@
 #include <stdlib.h>
 
 int main()
+
+
 {
-    printf("Hello World");
     struct Alumno
     {
-        char nombre[20];
-        char direccion[20];
-        char carrera[20];
+        char nombre[100];
+        char direccion[100];
+        char carrera[100];
         int edad;
         float promedio;
 
-    }a1 = {"Juan","Centro","Software",20,9.1};
+    }alumno[5];
    
 
-    printf("Los datos del alumno son: \n");
-    printf("%s %s %s %d %f",a1.nombre, a1.direccion, a1.carrera, a1.edad, a1.promedio);
-    return 0;
-}
+    for (int i = 0; i < 5; i++)
+    {
+        printf ("Escriba el nombre del alumno %d\n", i);
+        gets (alumno[i].nombre);
+        
 
-#include <stdio.h>
-#include <stdlib.h>
-int main() {
-    char frase [100];
-    printf ("Escriba una frase") ;
-    gets (frase);
+        puts ("Nombre introducido:");
+        puts (alumno[i].nombre);
 
-    puts ("Frase introducida:");
-    puts (frase);
+
+        printf ("Escriba la direccion del alumno %d\n", i);
+        gets (alumno[i].direccion);
+
+        puts ("Direccion introducido:");
+        puts (alumno[i].direccion);
+
+
+        printf ("Escriba la carrera del alumno %d\n", i);
+        gets (alumno[i].carrera);
+
+        puts ("Carrera introducido:");
+        puts (alumno[i].carrera);
+
+
+        printf ("Escriba la edad del alumno %d\n", i);
+        gets (alumno[i].edad);
+
+        puts ("Edad introducido:");
+        puts (alumno[i].edad);
+
+
+        printf ("Escriba el promedio del alumno %d\n", i);
+        gets (alumno[i].promedio);
+
+        puts ("Pomedio introducido:");
+        puts (alumno[i].promedio);
+        
+    }
+    
     return 0;
+
 }
